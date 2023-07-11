@@ -1,0 +1,41 @@
+OrdererOrgs:
+  - Name: Orderer
+    Domain: medtrac-network.com
+    Specs:
+      - Hostname: orderer
+PeerOrgs:
+  - Name: manufacturer
+    Domain: manufacturer.medtrac-network.com
+    EnableNodeOUs: true
+    Template:
+      Count: 2
+    Users:
+      Count: 1
+  - Name: distributor
+    Domain: distributor.medtrac-network.com
+    EnableNodeOUs: true
+    Template:
+      Count: 2
+    Users:
+      Count: 1
+  - Name: transporter
+    Domain: transporter.medtrac-network.com
+    EnableNodeOUs: true
+    Template:
+      Count: 2
+    Users:
+      Count: 1
+  - Name: retailer
+    Domain: retailer.medtrac-network.com
+    EnableNodeOUs: true
+    Template:
+      Count: 2
+    Users:
+      Count: 1
+  - Name: consumer
+    Domain: consumer.medtrac-network.com
+    EnableNodeOUs: true
+    Template:
+      Count: 2
+    Users:
+      Count: 1
