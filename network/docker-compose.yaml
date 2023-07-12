@@ -17,7 +17,6 @@ networks:
   medtrac:
 
 services:
-
   ca.manufacturer.medtrac-network.com:
     image: hyperledger/fabric-ca:latest
     environment:
