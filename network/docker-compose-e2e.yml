@@ -24,10 +24,10 @@ services:
       - FABRIC_CA_SERVER_CA_NAME=ca.manufacturer.medtrac-network.com
       - FABRIC_CA_SERVER_TLS_ENABLED=false
       # - FABRIC_CA_SERVER_TLS_CERTFILE=/etc/hyperledger/fabric-ca-server-config/ca.manufacturer.medtrac-network.com-cert.pem
-      # - FABRIC_CA_SERVER_TLS_KEYFILE=/etc/hyperledger/fabric-ca-server-config/6386d993821ba6ad7461c0904b9596cbf2ddf8e6df8a59de1cc7059b87643c28_sk
+      # - FABRIC_CA_SERVER_TLS_KEYFILE=/etc/hyperledger/fabric-ca-server-config/0dd35e77f78af90b2d10469c3ac40dc0451479c494fa8c17aa50612809498de0_sk
     ports:
       - "7054:7054"
-    command: sh -c 'fabric-ca-server start -b admin:adminpw -d' # --ca.certfile /etc/hyperledger/fabric-ca-server-config/ca.manufacturer.medtrac-network.com-cert.pem --ca.keyfile /etc/hyperledger/fabric-ca-server-config/6386d993821ba6ad7461c0904b9596cbf2ddf8e6df8a59de1cc7059b87643c28_sk -b admin:adminpw -d'
+    command: sh -c 'fabric-ca-server start -b admin:adminpw -d' # --ca.certfile /etc/hyperledger/fabric-ca-server-config/ca.manufacturer.medtrac-network.com-cert.pem --ca.keyfile /etc/hyperledger/fabric-ca-server-config/0dd35e77f78af90b2d10469c3ac40dc0451479c494fa8c17aa50612809498de0_sk -b admin:adminpw -d'
     volumes:
       - ./crypto-config/peerOrganizations/manufacturer.medtrac-network.com/ca/:/etc/hyperledger/fabric-ca-server-config
     container_name: ca.manufacturer.medtrac-network.com
@@ -41,10 +41,10 @@ services:
       - FABRIC_CA_SERVER_CA_NAME=ca.distributor.medtrac-network.com
       - FABRIC_CA_SERVER_TLS_ENABLED=false
       # - FABRIC_CA_SERVER_TLS_CERTFILE=/etc/hyperledger/fabric-ca-server-config/ca.distributor.medtrac-network.com-cert.pem
-      # - FABRIC_CA_SERVER_TLS_KEYFILE=/etc/hyperledger/fabric-ca-server-config/0cf5b518acc89ed5c909889a061357a6901bcd9f7c8bac943f1926ad0984c5c7_sk
+      # - FABRIC_CA_SERVER_TLS_KEYFILE=/etc/hyperledger/fabric-ca-server-config/9b9e98821563d139eb1284600f0a16c61bf0a9bd1c14320f097ca6b92170a8f6_sk
     ports:
       - "8054:7054"
-    command: sh -c 'fabric-ca-server start -b admin:adminpw -d' # --ca.certfile /etc/hyperledger/fabric-ca-server-config/ca.distributor.medtrac-network.com-cert.pem --ca.keyfile /etc/hyperledger/fabric-ca-server-config/0cf5b518acc89ed5c909889a061357a6901bcd9f7c8bac943f1926ad0984c5c7_sk -b admin:adminpw -d'
+    command: sh -c 'fabric-ca-server start -b admin:adminpw -d' # --ca.certfile /etc/hyperledger/fabric-ca-server-config/ca.distributor.medtrac-network.com-cert.pem --ca.keyfile /etc/hyperledger/fabric-ca-server-config/9b9e98821563d139eb1284600f0a16c61bf0a9bd1c14320f097ca6b92170a8f6_sk -b admin:adminpw -d'
     volumes:
       - ./crypto-config/peerOrganizations/distributor.medtrac-network.com/ca/:/etc/hyperledger/fabric-ca-server-config
     container_name: ca.distributor.medtrac-network.com
@@ -58,10 +58,10 @@ services:
       - FABRIC_CA_SERVER_CA_NAME=ca.transporter.medtrac-network.com
       - FABRIC_CA_SERVER_TLS_ENABLED=false
       # - FABRIC_CA_SERVER_TLS_CERTFILE=/etc/hyperledger/fabric-ca-server-config/ca.transporter.medtrac-network.com-cert.pem
-      # - FABRIC_CA_SERVER_TLS_KEYFILE=/etc/hyperledger/fabric-ca-server-config/2601e035ea710d9f753c2196e413183210f4543927765b86d2d5b49c2b43fe6e_sk
+      # - FABRIC_CA_SERVER_TLS_KEYFILE=/etc/hyperledger/fabric-ca-server-config/db470ccbc9e1784b337a15d15753fb3a586517d4a1d7136e42981fc5282c9a76_sk
     ports:
       - "11054:7054"
-    command: sh -c 'fabric-ca-server start -b admin:adminpw -d' # --ca.certfile /etc/hyperledger/fabric-ca-server-config/ca.transporter.medtrac-network.com-cert.pem --ca.keyfile /etc/hyperledger/fabric-ca-server-config/2601e035ea710d9f753c2196e413183210f4543927765b86d2d5b49c2b43fe6e_sk -b admin:adminpw -d'
+    command: sh -c 'fabric-ca-server start -b admin:adminpw -d' # --ca.certfile /etc/hyperledger/fabric-ca-server-config/ca.transporter.medtrac-network.com-cert.pem --ca.keyfile /etc/hyperledger/fabric-ca-server-config/db470ccbc9e1784b337a15d15753fb3a586517d4a1d7136e42981fc5282c9a76_sk -b admin:adminpw -d'
     volumes:
       - ./crypto-config/peerOrganizations/transporter.medtrac-network.com/ca/:/etc/hyperledger/fabric-ca-server-config
     container_name: ca.transporter.medtrac-network.com
@@ -75,10 +75,10 @@ services:
       - FABRIC_CA_SERVER_CA_NAME=ca.retailer.medtrac-network.com
       - FABRIC_CA_SERVER_TLS_ENABLED=false
       # - FABRIC_CA_SERVER_TLS_CERTFILE=/etc/hyperledger/fabric-ca-server-config/ca.retailer.medtrac-network.com-cert.pem
-      # - FABRIC_CA_SERVER_TLS_KEYFILE=/etc/hyperledger/fabric-ca-server-config/09af4129664115565ec28ef9eb2b86022a65c3138e4641ed0805fdf268277857_sk
+      # - FABRIC_CA_SERVER_TLS_KEYFILE=/etc/hyperledger/fabric-ca-server-config/b73bbd2e2162f5b149f8e3d6ba70f97f8baae7dea17b1f2a79b2510a82eba14a_sk
     ports:
       - "9054:7054"
-    command: sh -c 'fabric-ca-server start -b admin:adminpw -d' # --ca.certfile /etc/hyperledger/fabric-ca-server-config/ca.retailer.medtrac-network.com-cert.pem --ca.keyfile /etc/hyperledger/fabric-ca-server-config/09af4129664115565ec28ef9eb2b86022a65c3138e4641ed0805fdf268277857_sk -b admin:adminpw -d'
+    command: sh -c 'fabric-ca-server start -b admin:adminpw -d' # --ca.certfile /etc/hyperledger/fabric-ca-server-config/ca.retailer.medtrac-network.com-cert.pem --ca.keyfile /etc/hyperledger/fabric-ca-server-config/b73bbd2e2162f5b149f8e3d6ba70f97f8baae7dea17b1f2a79b2510a82eba14a_sk -b admin:adminpw -d'
     volumes:
       - ./crypto-config/peerOrganizations/retailer.medtrac-network.com/ca/:/etc/hyperledger/fabric-ca-server-config
     container_name: ca.retailer.medtrac-network.com
@@ -92,10 +92,10 @@ services:
       - FABRIC_CA_SERVER_CA_NAME=ca.consumer.medtrac-network.com
       - FABRIC_CA_SERVER_TLS_ENABLED=false
       # - FABRIC_CA_SERVER_TLS_CERTFILE=/etc/hyperledger/fabric-ca-server-config/ca.consumer.medtrac-network.com-cert.pem
-      # - FABRIC_CA_SERVER_TLS_KEYFILE=/etc/hyperledger/fabric-ca-server-config/7d44a47ebf0f1768e6663c8d2a6b0ec0592e4b97e77c18bb2a3401dbd4adba2a_sk
+      # - FABRIC_CA_SERVER_TLS_KEYFILE=/etc/hyperledger/fabric-ca-server-config/a59f0abdb0e62dfad935b30d5bf03cffcf6fec424c4abb49ddbb534e83a1e4af_sk
     ports:
       - "10054:7054"
-    command: sh -c 'fabric-ca-server start -b admin:adminpw -d' # --ca.certfile /etc/hyperledger/fabric-ca-server-config/ca.consumer.medtrac-network.com-cert.pem --ca.keyfile /etc/hyperledger/fabric-ca-server-config/7d44a47ebf0f1768e6663c8d2a6b0ec0592e4b97e77c18bb2a3401dbd4adba2a_sk -b admin:adminpw -d'
+    command: sh -c 'fabric-ca-server start -b admin:adminpw -d' # --ca.certfile /etc/hyperledger/fabric-ca-server-config/ca.consumer.medtrac-network.com-cert.pem --ca.keyfile /etc/hyperledger/fabric-ca-server-config/a59f0abdb0e62dfad935b30d5bf03cffcf6fec424c4abb49ddbb534e83a1e4af_sk -b admin:adminpw -d'
     volumes:
       - ./crypto-config/peerOrganizations/consumer.medtrac-network.com/ca/:/etc/hyperledger/fabric-ca-server-config
     container_name: ca.consumer.medtrac-network.com

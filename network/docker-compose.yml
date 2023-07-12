@@ -6,12 +6,12 @@ volumes:
   peer1.manufacturer.medtrac-network.com:
   peer0.distributor.medtrac-network.com:
   peer1.distributor.medtrac-network.com:
+  peer0.transporter.medtrac-network.com:
+  peer1.transporter.medtrac-network.com:
   peer0.retailer.medtrac-network.com:
   peer1.retailer.medtrac-network.com:
   peer0.consumer.medtrac-network.com:
   peer1.consumer.medtrac-network.com:
-  peer0.transporter.medtrac-network.com:
-  peer1.transporter.medtrac-network.com:
 
 networks:
   medtrac:
@@ -52,6 +52,23 @@ services:
     networks:
       - medtrac
 
+  ca.transporter.medtrac-network.com:
+    image: hyperledger/fabric-ca:latest
+    environment:
+      - FABRIC_CA_HOME=/etc/hyperledger/fabric-ca-server
+      - FABRIC_CA_SERVER_CA_NAME=ca.transporter.medtrac-network.com
+      - FABRIC_CA_SERVER_TLS_ENABLED=false
+      # - FABRIC_CA_SERVER_TLS_CERTFILE=/etc/hyperledger/fabric-ca-server-config/ca.transporter.medtrac-network.com-cert.pem
+      # - FABRIC_CA_SERVER_TLS_KEYFILE=/etc/hyperledger/fabric-ca-server-config/TRANSPORTER_CA_PRIVATE_KEY
+    ports:
+      - "11054:7054"
+    command: sh -c 'fabric-ca-server start -b admin:adminpw -d' # --ca.certfile /etc/hyperledger/fabric-ca-server-config/ca.transporter.medtrac-network.com-cert.pem --ca.keyfile /etc/hyperledger/fabric-ca-server-config/TRANSPORTER_CA_PRIVATE_KEY -b admin:adminpw -d'
+    volumes:
+      - ./crypto-config/peerOrganizations/transporter.medtrac-network.com/ca/:/etc/hyperledger/fabric-ca-server-config
+    container_name: ca.transporter.medtrac-network.com
+    networks:
+      - medtrac
+
   ca.retailer.medtrac-network.com:
     image: hyperledger/fabric-ca:latest
     environment:
@@ -83,23 +100,6 @@ services:
     volumes:
       - ./crypto-config/peerOrganizations/consumer.medtrac-network.com/ca/:/etc/hyperledger/fabric-ca-server-config
     container_name: ca.consumer.medtrac-network.com
-    networks:
-      - medtrac
-
-  ca.transporter.medtrac-network.com:
-    image: hyperledger/fabric-ca:latest
-    environment:
-      - FABRIC_CA_HOME=/etc/hyperledger/fabric-ca-server
-      - FABRIC_CA_SERVER_CA_NAME=ca.transporter.medtrac-network.com
-      - FABRIC_CA_SERVER_TLS_ENABLED=false
-      # - FABRIC_CA_SERVER_TLS_CERTFILE=/etc/hyperledger/fabric-ca-server-config/ca.transporter.medtrac-network.com-cert.pem
-      # - FABRIC_CA_SERVER_TLS_KEYFILE=/etc/hyperledger/fabric-ca-server-config/TRANSPORTER_CA_PRIVATE_KEY
-    ports:
-      - "11054:7054"
-    command: sh -c 'fabric-ca-server start -b admin:adminpw -d' # --ca.certfile /etc/hyperledger/fabric-ca-server-config/ca.transporter.medtrac-network.com-cert.pem --ca.keyfile /etc/hyperledger/fabric-ca-server-config/TRANSPORTER_CA_PRIVATE_KEY -b admin:adminpw -d'
-    volumes:
-      - ./crypto-config/peerOrganizations/transporter.medtrac-network.com/ca/:/etc/hyperledger/fabric-ca-server-config
-    container_name: ca.transporter.medtrac-network.com
     networks:
       - medtrac
 
@@ -143,6 +143,22 @@ services:
     networks:
       - medtrac
 
+  peer0.transporter.medtrac-network.com:
+    container_name: peer0.transporter.medtrac-network.com
+    extends:
+      file: docker-base/docker-compose-base.yaml
+      service: peer0.transporter.medtrac-network.com
+    networks:
+      - medtrac
+
+  peer1.transporter.medtrac-network.com:
+    container_name: peer1.transporter.medtrac-network.com
+    extends:
+      file: docker-base/docker-compose-base.yaml
+      service: peer1.transporter.medtrac-network.com
+    networks:
+      - medtrac
+
   peer0.retailer.medtrac-network.com:
     container_name: peer0.retailer.medtrac-network.com
     extends:
@@ -175,22 +191,6 @@ services:
     networks:
       - medtrac
 
-  peer0.transporter.medtrac-network.com:
-    container_name: peer0.transporter.medtrac-network.com
-    extends:
-      file: docker-base/docker-compose-base.yaml
-      service: peer0.transporter.medtrac-network.com
-    networks:
-      - medtrac
-
-  peer1.transporter.medtrac-network.com:
-    container_name: peer1.transporter.medtrac-network.com
-    extends:
-      file: docker-base/docker-compose-base.yaml
-      service: peer1.transporter.medtrac-network.com
-    networks:
-      - medtrac
-
   cli:
     container_name: cli
     image: hyperledger/fabric-tools:latest
@@ -220,20 +220,21 @@ services:
     depends_on:
       - ca.manufacturer.medtrac-network.com
       - ca.distributor.medtrac-network.com
+      - ca.transporter.medtrac-network.com
       - ca.retailer.medtrac-network.com
       - ca.consumer.medtrac-network.com
-      - ca.transporter.medtrac-network.com
       - orderer.medtrac-network.com
       - peer0.manufacturer.medtrac-network.com
       - peer1.manufacturer.medtrac-network.com
       - peer0.distributor.medtrac-network.com
       - peer1.distributor.medtrac-network.com
+      - peer0.transporter.medtrac-network.com
+      - peer1.transporter.medtrac-network.com
       - peer0.retailer.medtrac-network.com
       - peer1.retailer.medtrac-network.com
       - peer0.consumer.medtrac-network.com
       - peer1.consumer.medtrac-network.com
-      - peer0.transporter.medtrac-network.com
-      - peer1.transporter.medtrac-network.com
+
     networks:
       - medtrac
 

@@ -137,6 +137,7 @@ Application: &ApplicationDefaults
   Capabilities: *ApplicationCapabilities
 
 #Orderer
+
 Orderer: &OrdererDefaults
   OrdererType: solo
   Addresses:
@@ -158,8 +159,7 @@ Orderer: &OrdererDefaults
     Admins:
       Type: ImplicitMeta
       Rule: "ANY Admins"
-    # BlockValidation specifies what signatures must be included in the block
-    # from the orderer for the peer to validate it.
+    # BlockValidation specifies what signatures must be included in the block from the orderer for the peer to validate it.
     BlockValidation:
       Type: ImplicitMeta
       Rule: "ANY Writers"
@@ -183,6 +183,7 @@ Channel: &ChannelDefaults
 
 
 #Profiles
+
 Profiles:
   OrdererGenesis:
     <<: *ChannelDefaults
@@ -195,16 +196,15 @@ Profiles:
       Capabilities:
         <<: *OrdererCapabilities
     Consortiums:
-      medtracConsortium:
+      MedtracConsortium:
         Organizations:
           - *manufacturer
           - *distributor
           - *transporter
           - *retailer
           - *consumer
-
   medtracchannel:
-    Consortium: medtracConsortium
+    Consortium: MedtracConsortium
     Application:
       <<: *ApplicationDefaults
       Organizations:
