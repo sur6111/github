@@ -4,7 +4,7 @@
  * This is a Node.JS application to create shipment for an PO
  */
 
-const helper = require('./contractHelper')
+const helper = require('../contractHelper')
 
 /**
  * @description Module to create an shipment request for a particular PO raised either by Distributor or Retailer. After this transaction the owner of the drugs will be Transporter who will be shipping these drugs.

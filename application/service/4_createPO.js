@@ -4,7 +4,7 @@
  * This is a Node.JS application to raise an Purchase Order
  */
 
-const helper = require('./contractHelper')
+const helper = require('../contractHelper')
 
 /**
  * @description Module to add new Purchase Order raised either by distributor with Manufacturer [OR] retailer with distributor.

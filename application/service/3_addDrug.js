@@ -4,7 +4,7 @@
  * This is a Node.JS application to add new drug on the Network
  */
 
-const helper = require('./contractHelper')
+const helper = require('../contractHelper')
 
 /**
  * @description Module to add new drug on the network as requested by manufacturer.

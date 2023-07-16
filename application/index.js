@@ -5,15 +5,15 @@ const port = 4000
 
 // Import all function modules
 
-const addToWallet = require('.service/1_addToWallet')
-const registerCompany = require('.service/2_registerCompany')
-const addDrug = require('.service/3_addDrug')
-const createPO = require('.service/4_createPO')
-const createShipment = require('.service/5_createShipment')
-const updateShipment = require('.service/6_updateShipment')
-const retailDrug = require('.service/7_retailDrug')
-const viewHistory = require('.service/8_viewHistory')
-const viewDrugCurrentState = require('.service/9_viewDrugCurrentState')
+const addToWallet = require('./service/1_addToWallet')
+const registerCompany = require('./service/2_registerCompany')
+const addDrug = require('./service/3_addDrug')
+const createPO = require('./service/4_createPO')
+const createShipment = require('./service/5_createShipment')
+const updateShipment = require('./service/6_updateShipment')
+const retailDrug = require('./service/7_retailDrug')
+const viewHistory = require('./service/8_viewHistory')
+const viewDrugCurrentState = require('./service/9_viewDrugCurrentState')
 
 // Define Express app settings
 app.use(cors())

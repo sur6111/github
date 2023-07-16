@@ -4,7 +4,7 @@
  * This is a Node.JS application to view history of an medicine on the network
  */
 
-const helper = require('./contractHelper')
+const helper = require('../contractHelper')
 
 /**
  * @description Module to view complete history of an drug on the network

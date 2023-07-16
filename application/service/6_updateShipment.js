@@ -4,7 +4,7 @@
  * This is a Node.JS application to Update shipping status of an Purchase Order
  */
 
-const helper = require('./contractHelper')
+const helper = require('../contractHelper')
 
 /**
  * @description Module to update shipment status of an PO and ownership of the drug with the new owner information.

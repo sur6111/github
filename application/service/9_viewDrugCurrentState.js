@@ -4,7 +4,7 @@
  * This is a Node.JS application to view current status of an drug
  */
 
-const helper = require('./contractHelper')
+const helper = require('../contractHelper')
 
 /**
  * @description Module to view current status of an drug at anytime an organsation wants to see

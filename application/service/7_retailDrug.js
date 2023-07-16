@@ -4,7 +4,7 @@
  * This is a Node.JS application to sell debug to consumer
  */
 
-const helper = require('./contractHelper')
+const helper = require('../contractHelper')
 
 /**
  * @description Module to transfer the ownership of drug from Retailer to Consumer
