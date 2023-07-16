@@ -1,0 +1,724 @@
+{
+	"info": {
+		"_postman_id": "0f5a9442-ca40-4a3d-94f1-7a5ef3c5d435",
+		"name": "initiation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "distributer-addToWallet",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "certificatePath",
+							"value": "/home/upgrad/workspace/Capstone_Project_Sahil_Sonkar/medtrac-net/network/crypto-config/peerOrganizations/distributor.medtrac-network.com/users/Admin@distributor.medtrac-network.com/msp/signcerts/Admin@distributor.medtrac-network.com-cert.pem",
+							"type": "text"
+						},
+						{
+							"key": "privateKeyPath",
+							"value": "/home/upgrad/workspace/Capstone_Project_Sahil_Sonkar/medtrac-net/network/crypto-config/peerOrganizations/distributor.medtrac-network.com/users/Admin@distributor.medtrac-network.com/msp/keystore/3098f9ea4e428bf69902ff67b580e9b3fb993ff4f92666e33e4bfd6a0ece6b89_sk",
+							"type": "text"
+						},
+						{
+							"key": "orgRole",
+							"value": "distributor",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/addToWallet",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"addToWallet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "manufacturer-addToWallet",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "certificatePath",
+							"value": "/home/upgrad/workspace/Capstone_Project_Sahil_Sonkar/medtrac-net/network/crypto-config/peerOrganizations/manufacturer.medtrac-network.com/users/Admin@manufacturer.medtrac-network.com/msp/signcerts/Admin@manufacturer.medtrac-network.com-cert.pem",
+							"type": "text"
+						},
+						{
+							"key": "privateKeyPath",
+							"value": "/home/upgrad/workspace/Capstone_Project_Sahil_Sonkar/medtrac-net/network/crypto-config/peerOrganizations/manufacturer.medtrac-network.com/users/Admin@manufacturer.medtrac-network.com/msp/keystore/078cdf11b3de5ed80fb0e75f4681a5e4c51b6fc302cb0d0017c105af4e023dd1_sk",
+							"type": "text"
+						},
+						{
+							"key": "orgRole",
+							"value": "manufacturer",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/addToWallet",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"addToWallet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "retailer-addToWallet",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "certificatePath",
+							"value": "/home/upgrad/workspace/Capstone_Project_Sahil_Sonkar/medtrac-net/network/crypto-config/peerOrganizations/retailer.medtrac-network.com/users/Admin@retailer.medtrac-network.com/msp/signcerts/Admin@retailer.medtrac-network.com-cert.pem",
+							"type": "text"
+						},
+						{
+							"key": "privateKeyPath",
+							"value": "/home/upgrad/workspace/Capstone_Project_Sahil_Sonkar/medtrac-net/network/crypto-config/peerOrganizations/retailer.medtrac-network.com/users/Admin@retailer.medtrac-network.com/msp/keystore/c75184c0b3b359e8567670d5fba18338fc2e7bfd215e85ba8fdc979d66b862a3_sk",
+							"type": "text"
+						},
+						{
+							"key": "orgRole",
+							"value": "retailer",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/addToWallet",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"addToWallet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "transporter-addToWallet",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "certificatePath",
+							"value": "/home/upgrad/workspace/Capstone_Project_Sahil_Sonkar/medtrac-net/network/crypto-config/peerOrganizations/transporter.medtrac-network.com/users/Admin@transporter.medtrac-network.com/msp/signcerts/Admin@transporter.medtrac-network.com-cert.pem",
+							"type": "text"
+						},
+						{
+							"key": "privateKeyPath",
+							"value": "/home/upgrad/workspace/Capstone_Project_Sahil_Sonkar/medtrac-net/network/crypto-config/peerOrganizations/transporter.medtrac-network.com/users/Admin@transporter.medtrac-network.com/msp/keystore/f66dce3fda29b1050c7e2f45143e85ac46e2a70cc112a47da0961e8d762b76bd_sk",
+							"type": "text"
+						},
+						{
+							"key": "orgRole",
+							"value": "transporter",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/addToWallet",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"addToWallet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "consumer-addToWallet",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "certificatePath",
+							"value": "/home/upgrad/workspace/Capstone_Project_Sahil_Sonkar/medtrac-net/network/crypto-config/peerOrganizations/consumer.medtrac-network.com/users/Admin@consumer.medtrac-network.com/msp/signcerts/Admin@consumer.medtrac-network.com-cert.pem",
+							"type": "text"
+						},
+						{
+							"key": "privateKeyPath",
+							"value": "/home/upgrad/workspace/Capstone_Project_Sahil_Sonkar/medtrac-net/network/crypto-config/peerOrganizations/consumer.medtrac-network.com/users/Admin@consumer.medtrac-network.com/msp/keystore/cf1c6d4d8dd7b0eb7d6adfdf5cb65b0853066df31d9571a5331dfccfe463cb89_sk",
+							"type": "text"
+						},
+						{
+							"key": "orgRole",
+							"value": "consumer",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/addToWallet",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"addToWallet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "manufacturer-sunmedtrac-registerCompany",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "orgRole",
+							"value": "manufacturer",
+							"type": "text"
+						},
+						{
+							"key": "companyCRN",
+							"value": "MAN001",
+							"type": "text"
+						},
+						{
+							"key": "companyName",
+							"value": "Sun medtrac",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "Chennai",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/registerCompany",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"registerCompany"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "distributor-VGmedtrac-registerCompany",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "orgRole",
+							"value": "distributor",
+							"type": "text"
+						},
+						{
+							"key": "companyCRN",
+							"value": "DIST001",
+							"type": "text"
+						},
+						{
+							"key": "companyName",
+							"value": "VG medtrac",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "Vizag",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/registerCompany",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"registerCompany"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "retailer-upgrad-registerCompany",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "orgRole",
+							"value": "retailer",
+							"type": "text"
+						},
+						{
+							"key": "companyCRN",
+							"value": "RET002",
+							"type": "text"
+						},
+						{
+							"key": "companyName",
+							"value": "upgrad",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "Mumbai",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/registerCompany",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"registerCompany"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "transporter-fedex-registerCompany",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "orgRole",
+							"value": "transporter",
+							"type": "text"
+						},
+						{
+							"key": "companyCRN",
+							"value": "TRA001",
+							"type": "text"
+						},
+						{
+							"key": "companyName",
+							"value": "FedEx",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "Delhi",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/registerCompany",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"registerCompany"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "transporter-bluedart-registerCompany",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "orgRole",
+							"value": "transporter",
+							"type": "text"
+						},
+						{
+							"key": "companyCRN",
+							"value": "TRA002",
+							"type": "text"
+						},
+						{
+							"key": "companyName",
+							"value": "Blue Dart",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "Bangalore",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/registerCompany",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"registerCompany"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "manufacturer-Paracetamol-001-addDrug",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "orgRole",
+							"value": "manufacturer",
+							"type": "text"
+						},
+						{
+							"key": "drugName",
+							"value": "Paracetamol",
+							"type": "text"
+						},
+						{
+							"key": "serialNo",
+							"value": "001",
+							"type": "text"
+						},
+						{
+							"key": "mfgDate",
+							"value": "02-15-2022",
+							"type": "text"
+						},
+						{
+							"key": "expDate",
+							"value": "02-15-2023",
+							"type": "text"
+						},
+						{
+							"key": "companyCRN",
+							"value": "MAN001",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/addDrug",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"addDrug"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "manufacturer-Paracetamol-002-addDrug",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "orgRole",
+							"value": "manufacturer",
+							"type": "text"
+						},
+						{
+							"key": "drugName",
+							"value": "Paracetamol",
+							"type": "text"
+						},
+						{
+							"key": "serialNo",
+							"value": "002",
+							"type": "text"
+						},
+						{
+							"key": "mfgDate",
+							"value": "02-15-2022",
+							"type": "text"
+						},
+						{
+							"key": "expDate",
+							"value": "02-15-2023",
+							"type": "text"
+						},
+						{
+							"key": "companyCRN",
+							"value": "MAN001",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/addDrug",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"addDrug"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "manufacturer-Paracetamol-003-addDrug",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "orgRole",
+							"value": "manufacturer",
+							"type": "text"
+						},
+						{
+							"key": "drugName",
+							"value": "Paracetamol",
+							"type": "text"
+						},
+						{
+							"key": "serialNo",
+							"value": "003",
+							"type": "text"
+						},
+						{
+							"key": "mfgDate",
+							"value": "05-15-2022",
+							"type": "text"
+						},
+						{
+							"key": "expDate",
+							"value": "05-15-2023",
+							"type": "text"
+						},
+						{
+							"key": "companyCRN",
+							"value": "MAN001",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/addDrug",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"addDrug"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "manufacturer-Paracetamol-004-addDrug",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "orgRole",
+							"value": "manufacturer",
+							"type": "text"
+						},
+						{
+							"key": "drugName",
+							"value": "Paracetamol",
+							"type": "text"
+						},
+						{
+							"key": "serialNo",
+							"value": "004",
+							"type": "text"
+						},
+						{
+							"key": "mfgDate",
+							"value": "01-15-2022",
+							"type": "text"
+						},
+						{
+							"key": "expDate",
+							"value": "01-15-2023",
+							"type": "text"
+						},
+						{
+							"key": "companyCRN",
+							"value": "MAN001",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:4000/addDrug",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"addDrug"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
