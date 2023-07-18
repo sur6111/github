@@ -19,7 +19,7 @@ async function getContractInstance(organisationRole) {
 	// Load connection profile; will be used to locate a gateway; The CCP is converted from YAML to JSON.
 	let connectionProfile = yaml.safeLoad(
 		fs.readFileSync(
-			'./connection-profile-' + organisationRole + '.yaml',
+			'./connection-profiles/connection-profile-' + organisationRole + '.yaml',
 			'utf8',
 		),
 	)
