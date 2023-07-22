@@ -79,35 +79,35 @@ channels:
         eventSource: false
 
 organizations:
-manufacturer:
+  manufacturer:
     mspid: manufacturerMSP
     peers:
       - peer0.manufacturer.medtrac-network.com
       - peer1.manufacturer.medtrac-network.com
     certificateAuthorities:
       - ca.manufacturer.medtrac-network.com
-distributor:
+  distributor:
     mspid: distributorMSP
     peers:
       - peer0.distributor.medtrac-network.com
       - peer1.distributor.medtrac-network.com
     certificateAuthorities:
       - ca.distributor.medtrac-network.com
-retailer:
+  retailer:
     mspid: retailerMSP
     peers:
       - peer0.retailer.medtrac-network.com
       - peer1.retailer.medtrac-network.com
     certificateAuthorities:
       - ca.retailer.medtrac-network.com
-transporter:
+  transporter:
     mspid: transporterMSP
     peers:
       - peer0.transporter.medtrac-network.com
       - peer1.transporter.medtrac-network.com
     certificateAuthorities:
       - ca.transporter.medtrac-network.com
-consumer:
+  consumer:
     mspid: consumerMSP
     peers:
       - peer0.consumer.medtrac-network.com

@@ -4,3 +4,4 @@ node_modules/
 identity/
 channel-artifacts/
 package-lock.json
+caliper.log

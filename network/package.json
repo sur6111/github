@@ -1,0 +1,19 @@
+{
+  "name": "network",
+  "version": "1.0.0",
+  "description": "Medtrac Network",
+  "main": "caliper-test.js",
+  "dependencies": {
+    "@hyperledger/caliper-cli": "^0.4.0",
+    "fabric-client": "^1.4.11",
+    "fabric-network": "^1.4.11",
+    "fabric-protos": "^2.0.0-snapshot.1",
+    "fs-extra": "^8.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sahil Sonkar",
+  "license": "ISC"
+}
