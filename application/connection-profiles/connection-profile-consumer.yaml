@@ -121,7 +121,7 @@ orderers:
     grpcOptions:
       ssl-target-name-override: orderer.medtrac-network.com
     tlsCACerts:
-      path: /home/upgrad/workspace/drug-counterfeiting/network/crypto-config/ordererOrganizations/medtrac-network.com/orderers/orderer.medtrac-network.com/msp/tlscacerts/tlsca.medtrac-network.com-cert.pem
+      path: ../../network/crypto-config/ordererOrganizations/medtrac-network.com/orderers/orderer.medtrac-network.com/msp/tlscacerts/tlsca.medtrac-network.com-cert.pem
 
 peers:
   peer0.manufacturer.medtrac-network.com:
@@ -130,70 +130,70 @@ peers:
       ssl-target-name-override: peer0.manufacturer.medtrac-network.com
       request-timeout: 120001
     tlsCACerts:
-      path: /home/upgrad/workspace/drug-counterfeiting/network/crypto-config/peerOrganizations/manufacturer.medtrac-network.com/peers/peer0.manufacturer.medtrac-network.com/msp/tlscacerts/tlsca.manufacturer.medtrac-network.com-cert.pem
+      path: ../../network/crypto-config/peerOrganizations/manufacturer.medtrac-network.com/peers/peer0.manufacturer.medtrac-network.com/msp/tlscacerts/tlsca.manufacturer.medtrac-network.com-cert.pem
   peer1.manufacturer.medtrac-network.com:
     url: grpc://localhost:8051
     grpcOptions:
       ssl-target-name-override: peer1.manufacturer.medtrac-network.com
       request-timeout: 120001
     tlsCACerts:
-      path: /home/upgrad/workspace/drug-counterfeiting/network/crypto-config/peerOrganizations/manufacturer.medtrac-network.com/peers/peer1.manufacturer.medtrac-network.com/msp/tlscacerts/tlsca.manufacturer.medtrac-network.com-cert.pem
+      path: ../../network/crypto-config/peerOrganizations/manufacturer.medtrac-network.com/peers/peer1.manufacturer.medtrac-network.com/msp/tlscacerts/tlsca.manufacturer.medtrac-network.com-cert.pem
   peer0.distributor.medtrac-network.com:
     url: grpc://localhost:9051
     grpcOptions:
       ssl-target-name-override: peer0.distributor.medtrac-network.com
       request-timeout: 120001
     tlsCACerts:
-      path: /home/upgrad/workspace/drug-counterfeiting/network/crypto-config/peerOrganizations/users.medtrac-network.com/peers/peer0.users.medtrac-network.com/msp/tlscacerts/tlsca.users.medtrac-network.com-cert.pem
+      path: ../../network/crypto-config/peerOrganizations/users.medtrac-network.com/peers/peer0.users.medtrac-network.com/msp/tlscacerts/tlsca.users.medtrac-network.com-cert.pem
   peer1.distributor.medtrac-network.com:
     url: grpc://localhost:10051
     grpcOptions:
       ssl-target-name-override: peer1.distributor.medtrac-network.com
       request-timeout: 120001
     tlsCACerts:
-      path: /home/upgrad/workspace/drug-counterfeiting/network/crypto-config/peerOrganizations/users.medtrac-network.com/peers/peer1.users.medtrac-network.com/msp/tlscacerts/tlsca.users.medtrac-network.com-cert.pem
+      path: ../../network/crypto-config/peerOrganizations/users.medtrac-network.com/peers/peer1.users.medtrac-network.com/msp/tlscacerts/tlsca.users.medtrac-network.com-cert.pem
   peer0.retailer.medtrac-network.com:
     url: grpc://localhost:9051
     grpcOptions:
       ssl-target-name-override: peer0.retailer.medtrac-network.com
       request-timeout: 120001
     tlsCACerts:
-      path: /home/upgrad/workspace/drug-counterfeiting/network/crypto-config/peerOrganizations/users.medtrac-network.com/peers/peer0.users.medtrac-network.com/msp/tlscacerts/tlsca.users.medtrac-network.com-cert.pem
+      path: ../../network/crypto-config/peerOrganizations/users.medtrac-network.com/peers/peer0.users.medtrac-network.com/msp/tlscacerts/tlsca.users.medtrac-network.com-cert.pem
   peer1.retailer.medtrac-network.com:
     url: grpc://localhost:10051
     grpcOptions:
       ssl-target-name-override: peer1.retailer.medtrac-network.com
       request-timeout: 120001
     tlsCACerts:
-      path: /home/upgrad/workspace/drug-counterfeiting/network/crypto-config/peerOrganizations/users.medtrac-network.com/peers/peer1.users.medtrac-network.com/msp/tlscacerts/tlsca.users.medtrac-network.com-cert.pem
+      path: ../../network/crypto-config/peerOrganizations/users.medtrac-network.com/peers/peer1.users.medtrac-network.com/msp/tlscacerts/tlsca.users.medtrac-network.com-cert.pem
   peer0.transporter.medtrac-network.com:
     url: grpc://localhost:9051
     grpcOptions:
       ssl-target-name-override: peer0.transporter.medtrac-network.com
       request-timeout: 120001
     tlsCACerts:
-      path: /home/upgrad/workspace/drug-counterfeiting/network/crypto-config/peerOrganizations/users.medtrac-network.com/peers/peer0.users.medtrac-network.com/msp/tlscacerts/tlsca.users.medtrac-network.com-cert.pem
+      path: ../../network/crypto-config/peerOrganizations/users.medtrac-network.com/peers/peer0.users.medtrac-network.com/msp/tlscacerts/tlsca.users.medtrac-network.com-cert.pem
   peer1.transporter.medtrac-network.com:
     url: grpc://localhost:10051
     grpcOptions:
       ssl-target-name-override: peer1.transporter.medtrac-network.com
       request-timeout: 120001
     tlsCACerts:
-      path: /home/upgrad/workspace/drug-counterfeiting/network/crypto-config/peerOrganizations/users.medtrac-network.com/peers/peer1.users.medtrac-network.com/msp/tlscacerts/tlsca.users.medtrac-network.com-cert.pem
+      path: ../../network/crypto-config/peerOrganizations/users.medtrac-network.com/peers/peer1.users.medtrac-network.com/msp/tlscacerts/tlsca.users.medtrac-network.com-cert.pem
   peer0.consumer.medtrac-network.com:
     url: grpc://localhost:9051
     grpcOptions:
       ssl-target-name-override: peer0.consumer.medtrac-network.com
       request-timeout: 120001
     tlsCACerts:
-      path: /home/upgrad/workspace/drug-counterfeiting/network/crypto-config/peerOrganizations/users.medtrac-network.com/peers/peer0.users.medtrac-network.com/msp/tlscacerts/tlsca.users.medtrac-network.com-cert.pem
+      path: ../../network/crypto-config/peerOrganizations/users.medtrac-network.com/peers/peer0.users.medtrac-network.com/msp/tlscacerts/tlsca.users.medtrac-network.com-cert.pem
   peer1.consumer.medtrac-network.com:
     url: grpc://localhost:10051
     grpcOptions:
       ssl-target-name-override: peer1.consumer.medtrac-network.com
       request-timeout: 120001
     tlsCACerts:
-      path: /home/upgrad/workspace/drug-counterfeiting/network/crypto-config/peerOrganizations/users.medtrac-network.com/peers/peer1.users.medtrac-network.com/msp/tlscacerts/tlsca.users.medtrac-network.com-cert.pem
+      path: ../../network/crypto-config/peerOrganizations/users.medtrac-network.com/peers/peer1.users.medtrac-network.com/msp/tlscacerts/tlsca.users.medtrac-network.com-cert.pem
 
 certificateAuthorities:
   ca.manufacturer.medtrac-network.com:
@@ -201,7 +201,7 @@ certificateAuthorities:
     httpOptions:
       verify: false
     tlsCACerts:
-      path: /home/upgrad/workspace/drug-counterfeiting/network/crypto-config/peerOrganizations/manufacturer.medtrac-network.com/ca/ca.manufacturer.medtrac-network.com-cert.pem
+      path: ../../network/crypto-config/peerOrganizations/manufacturer.medtrac-network.com/ca/ca.manufacturer.medtrac-network.com-cert.pem
     manufacturer:
       - enrollId: admin
         enrollSecret: adminpw
@@ -211,7 +211,7 @@ certificateAuthorities:
     httpOptions:
       verify: false
     tlsCACerts:
-      path: /home/upgrad/workspace/drug-counterfeiting/network/crypto-config/peerOrganizations/users.medtrac-network.com/ca/ca.users.medtrac-network.com-cert.pem
+      path: ../../network/crypto-config/peerOrganizations/users.medtrac-network.com/ca/ca.users.medtrac-network.com-cert.pem
     manufacturer:
       - enrollId: admin
         enrollSecret: adminpw
@@ -221,7 +221,7 @@ certificateAuthorities:
     httpOptions:
       verify: false
     tlsCACerts:
-      path: /home/upgrad/workspace/drug-counterfeiting/network/crypto-config/peerOrganizations/users.medtrac-network.com/ca/ca.users.medtrac-network.com-cert.pem
+      path: ../../network/crypto-config/peerOrganizations/users.medtrac-network.com/ca/ca.users.medtrac-network.com-cert.pem
     manufacturer:
       - enrollId: admin
         enrollSecret: adminpw
@@ -231,7 +231,7 @@ certificateAuthorities:
     httpOptions:
       verify: false
     tlsCACerts:
-      path: /home/upgrad/workspace/drug-counterfeiting/network/crypto-config/peerOrganizations/users.medtrac-network.com/ca/ca.users.medtrac-network.com-cert.pem
+      path: ../../network/crypto-config/peerOrganizations/users.medtrac-network.com/ca/ca.users.medtrac-network.com-cert.pem
     manufacturer:
       - enrollId: admin
         enrollSecret: adminpw
@@ -241,7 +241,7 @@ certificateAuthorities:
     httpOptions:
       verify: false
     tlsCACerts:
-      path: /home/upgrad/workspace/drug-counterfeiting/network/crypto-config/peerOrganizations/users.medtrac-network.com/ca/ca.users.medtrac-network.com-cert.pem
+      path: ../../network/crypto-config/peerOrganizations/users.medtrac-network.com/ca/ca.users.medtrac-network.com-cert.pem
     manufacturer:
       - enrollId: admin
         enrollSecret: adminpw
