@@ -25,7 +25,7 @@ organizations:
       certificates:
       - name: 'manufacturerMSP'
         clientPrivateKey:
-          path: './crypto-config/peerOrganizations/manufacturer.medtrac-network.com/peers/peer0.manufacturer.medtrac-network.com/msp/keystore/c0b02948022d0550bc1517cfe01840ff6f54146a17fd437dc4fe9d01b92f86a7_sk'
+          path: './crypto-config/peerOrganizations/manufacturer.medtrac-network.com/peers/peer0.manufacturer.medtrac-network.com/msp/keystore/a2afb1b5052cb6159814cd1d8255d22aa31d53ff476c1b258779bd3deada9a6a_sk'
         clientSignedCert:
           path: './crypto-config/peerOrganizations/manufacturer.medtrac-network.com/peers/peer0.manufacturer.medtrac-network.com/msp/signcerts/peer0.manufacturer.medtrac-network.com-cert.pem'
     connectionProfile:
