@@ -1,1 +1,33 @@
+name: Caliper Benchmarks
+version: "2.0.0"
 
+caliper:
+  blockchain: fabric
+  roundDuration: 30
+  sutOptions:
+    network-configuration-path: '../application/connection-profiles/connection-profile-manufacturer.yaml'
+    network-configuration-file: 'connection-profile-manufacturer.yaml'
+    endorsement-policy: "AND('manufacturerMSP.peer')"
+    channel-id: medtracchannel
+    orderer-id: 'orderer.medtrac-network.com'
+
+channels:
+  # channelName of medtracchannel matches the name of the channel created by test network
+  - channelName: medtracchannel
+    # the chaincodeIDs of all the fabric chaincode in caliper-benchmarks
+    contracts:
+    - id: medtracnet
+
+organizations:
+  - mspid: manufacturerMSP
+    # Identities come from cryptogen created material for test-network
+    identities:
+      certificates:
+      - name: 'manufacturerMSP'
+        clientPrivateKey:
+          path: './crypto-config/peerOrganizations/manufacturer.medtrac-network.com/peers/peer0.manufacturer.medtrac-network.com/msp/keystore/a2afb1b5052cb6159814cd1d8255d22aa31d53ff476c1b258779bd3deada9a6a_sk'
+        clientSignedCert:
+          path: './crypto-config/peerOrganizations/manufacturer.medtrac-network.com/peers/peer0.manufacturer.medtrac-network.com/msp/signcerts/peer0.manufacturer.medtrac-network.com-cert.pem'
+    connectionProfile:
+      path: '../application/connection-profiles/connection-profile-manufacturer.yaml' 
+      discover: false
